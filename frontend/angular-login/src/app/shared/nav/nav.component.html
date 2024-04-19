@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img class="logo" src="https://i.pinimg.com/originals/bd/f7/d1/bdf7d1ee91ea3cbb9736555dbead5ed1.png">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li *ngIf="!userLoginOn" class="nav-item">
+            <a class="nav-link" routerLink="/iniciar-sesion">Login</a>
+          </li>
+          <li *ngIf="userLoginOn" class="nav-item">
+            <a class="nav-link" (click)="logout()"  routerLink="/inicio">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

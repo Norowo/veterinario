@@ -1,0 +1,40 @@
+<app-nav></app-nav>
+<p *ngIf="!userLoginOn" class="alert alert-danger">Unauthenticated user</p>
+<p *ngIf="userLoginOn" class="alert alert-success">Authenticated user</p>
+<div *ngIf="userLoginOn">
+<div class="card ">
+    <div class="card-header">
+        Veterinarian
+    </div>
+    <div class="card-body m-0">
+        <app-personal-details></app-personal-details>
+    </div>
+
+</div>
+<div class="card">
+    <div class="card-header">
+        Pet Information
+    </div>
+    <div class="card-body m-0">
+
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Owner Information
+    </div>
+    <div class="card-body m-0">
+
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="card-header">
+        Upcoming Appointments
+    </div>
+    <div class="card-body m-0">
+
+    </div>
+</div>
+</div>
